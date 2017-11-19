@@ -21,3 +21,10 @@ Backend
 4. Server pre API - Flask idealne
 
 Mimo beta verzie by bolo vhodne mat uz aj databazu, kde si budem ukladat vsetky vytvorene XML a mozno aj user mgnmt.
+
+
+Spravime to ako s DB?
+    - vsetky ziadosti sa budu ukladat do db(z nej asi zaloha)
+    - zaroven sa moze vygenerovat xml a pastnut sa moze do suboru - KONZISTENCIA?
+    - cize by som mohol spravit portal, kde by bol "admin" pristup a mohol by som vidiet vsetky ziadosti
+    - vedelo by to napriklad vyplut vsetky lokality, ktore sme odoslali - moze pomocot pri zadavani novych adries
