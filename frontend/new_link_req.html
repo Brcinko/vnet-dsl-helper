@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DSL nova linka</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body>
+	<!-- Sidebar -->
+	<div class="w3-sidebar w3-bar-block w3-white w3-animate-left" style="display:none;z-index:4" id="mySidebar">
+	  <button class="w3-bar-item w3-button" onclick="w3_close()">Close</button>
+	  <a href="new_link_req.html" class="w3-bar-item w3-button">Nova linka</a>
+	  <a href="help.html" class="w3-bar-item w3-button">Napoveda</a>
+	  <a href="" class="w3-bar-item w3-button">Link 3</a>
+	</div>
+
+	<!-- Overlay -->
+	<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+	<div>
+	  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">
+	    <h1>XML Generator pre novu linku</h1>
+			<h2>Vyber Produktu</h2>
+			<p>
+				<p style="display:none" id="productWarning" class="w3-text-red">Toto pole je povinne.</p>
+				<label class="w3-text-teal"><b>Produkt:*</b></label>
+				<select id="productSelect">
+					<option id="0">Vyber produkt</option>
+				</select>
+		 		
+			</p>
+			<h2>Kontaktna osoba</h2>
+			<p>
+				<p style="display:none" id="firstNameWarning" class="w3-text-red">Toto pole je povinne.</p>
+				<label class="w3-text-teal"><b>Meno:*</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="contactFirstName"> 
+			</p>
+			<p>
+				<p style="display:none" id="lastNameWarning" class="w3-text-red">Toto pole je povinne.</p>
+				<label class="w3-text-teal"><b>Priezvisko:*</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="contactLastName"> 
+			</p>
+			<p>
+				<p style="display:none" id="phoneNumberWarning" class="w3-text-red">Toto pole je povinne.</p>
+				<label class="w3-text-teal"><b>Telefonne cislo:*</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="contactNumber"> 
+			</p>
+			<h2>Adresa <a href="https://sprava-new.vnet.sk/telekom-dsl/dotaz_tcom_soap/addr_soap.php" target="_blank">(overenie adresy) </a></h2>
+			<p>
+				<p style="display:none" id="streetWarning" class="w3-text-red">Toto pole je povinne.</p>
+				<label class="w3-text-teal"><b>Nazov ulice:*</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="StreetName"> 
+			</p>
+			<p>
+				<label class="w3-text-teal"><b>Supisne cislo:</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="AddressNum"> 
+			</p>
+			<p>
+				<label class="w3-text-teal"><b>Evidencne cislo:</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="EvidencialNum"> 
+			</p>
+			<p>
+				<label class="w3-text-teal"><b>Cislo bytu:</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="ApartmentNum"> 
+			</p>
+			<p>
+				<label class="w3-text-teal"><b>Zacislie:</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="BlockNum"> 
+			</p>
+			<p>
+				<label class="w3-text-teal"><b>Poschodie:</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="Floor"> 
+			</p>
+			<p>
+				<p style="display:none" id="ZIPCodeWarning" class="w3-text-red">Toto pole je povinne.</p>
+				<label class="w3-text-teal"><b>PSC(bez medzery):*</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="ZIPCode"> 
+			</p>
+			<p>
+				<p style="display:none" id="CityWarning" class="w3-text-red">Toto pole je povinne.</p>
+				<label class="w3-text-teal"><b>Mesto:*</b></label>
+		 		<input class="w3-input w3-animate-input" type="text" style="width:30%" id="City"> 
+			</p>
+			<button class="w3-btn w3-ripple w3-teal" onclick="getNewReqValues()">Button</button>
+		</div>
+	</div>
+
+
+</body>
+<script type="text/javascript">
+window.addEventListener('load', 
+  function() { 
+    setProductDropdown();
+  }, false);
+</script>
+
+</html>

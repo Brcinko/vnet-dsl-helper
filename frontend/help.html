@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DSL programy</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body>
+		<!-- Sidebar -->
+	<div class="w3-sidebar w3-bar-block w3-white w3-animate-left" id="mySidebar" style="display:none;z-index:4" >
+	  <button class="w3-bar-item w3-button" onclick="w3_close()">Close</button>
+	  <a href="new_link_req.html" class="w3-bar-item w3-button">Nova linka</a>
+	  <a href="help.html" class="w3-bar-item w3-button">Napoveda</a>
+	  <a href="" class="w3-bar-item w3-button">Link 3</a>
+	</div>
+
+	<!-- Overlay -->
+	<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+	<div>
+	  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+		<div class="w3-container">
+		  <h2>Tabulka rychlosti DSL programov</h2>
+
+		  <table class="w3-table w3-striped w3-bordered w3-hoverable w3-centered">
+		    <tr class="w3-blue">
+		      <th>Nazov programu</th>
+		      <th>Download</th>
+		      <th>Upload</th>
+		    </tr>
+		    <tr>
+		      <td>ADSL Partner Naked L</td>
+		      <td>4</td>
+		      <td>0,5</td>
+		    </tr>
+		    <tr>
+		      <td>ADSL Partner Naked M</td>
+		      <td>8</td>
+		      <td>1</td>
+		    </tr>
+		    <tr>
+		      <td>ADSL Partner Naked H</td>
+		      <td>15</td>
+		      <td>1</td>
+		    </tr>
+		    <tr>
+		      <td>VDSL Partner Naked L</td>
+		      <td>8</td>
+		      <td>1</td>
+		    </tr>
+		    <tr>
+		      <td>VDSL Partner Naked H</td>
+		      <td>30</td>
+		      <td>3</td>
+		    </tr>
+		  </table>
+		</div>
+</body>
+
+</html>
